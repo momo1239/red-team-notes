@@ -26,3 +26,47 @@ Get-NetUser | select samaccountname
 Get-NetComputer
 ```
 
+## Domain Groups
+```
+Get-NetGroup
+```
+
+## Domain Admin Groups
+
+```
+Get-NetGroupMember -GroupName "Domain Admins" -Recurse
+```
+
+## Local Groups
+```
+Get-NetLocalGroup
+```
+
+## OU
+
+```
+Get-NetOU
+```
+
+## Forest
+
+```
+Get-NetForest
+```
+
+## Forest Trust
+```
+Get-NetForestTrust
+```
+
+## Forest Catalog
+```
+Get-NetForestCatalog
+```
+
+## Kerberos SPN
+```
+Get-NetUsers -SPN | select samaccountname, serviceprincipalname
+```
+
+
